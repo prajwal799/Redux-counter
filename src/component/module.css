@@ -1,0 +1,30 @@
+.calculator_box{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.value{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.calculator_btn{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: white;
+     font-size: 20px; 
+    margin: 10px;
+}
+.calculator_btn_incre{
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: white;
+     font-size: 20px; 
+    margin: 10px;
+}

@@ -3,14 +3,14 @@ import './App.css';
 import Counter from './component/Counter';
 import { useContext, useState } from 'react';
 import { AppContext } from './Redux/AppContextApi';
+import Calculator from './component/Calculator';
 
 function App() {
   const {getState} = useContext(AppContext);
   const {counter} = getState();
   return (
     <div className="App">
-      <Counter />
-      <h2>{counter}</h2>
+      <Calculator />
     </div>
   );
 }

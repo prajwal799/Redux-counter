@@ -17,6 +17,7 @@ const reducer = (state = initState,{type,payload} ) => {
                    ...state,
                    counter : state.counter - payload
                }
+               
 
     default :
     return state

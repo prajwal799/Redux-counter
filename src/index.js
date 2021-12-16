@@ -5,12 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {store} from "./Redux/store.js"
 import AppContextProvider from './Redux/AppContextApi';
+import {store2} from "./Redux2/store2.js"
+import AppCalculatorProvider from './Redux2/AppContextCalculator';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppContextProvider store={store}>
+    <AppCalculatorProvider store2={store2}>
+  <AppContextProvider store={store}>
     <App />
     </AppContextProvider>
+    </AppCalculatorProvider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
