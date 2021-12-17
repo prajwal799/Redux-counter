@@ -12,4 +12,5 @@ const reduceCounter = (payload) => {
         payload
     };
 };
+
 export {addCounter,reduceCounter};

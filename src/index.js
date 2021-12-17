@@ -7,15 +7,21 @@ import {store} from "./Redux/store.js"
 import AppContextProvider from './Redux/AppContextApi';
 import {store2} from "./Redux2/store2.js"
 import AppCalculatorProvider from './Redux2/AppContextCalculator';
+import {Provider} from "react-redux"
+import { store3 } from './Redux3/store3.js';
 
 
 ReactDOM.render(
   <React.StrictMode>
+
     <AppCalculatorProvider store2={store2}>
   <AppContextProvider store={store}>
-    <App />
+   <Provider store={store3}>
+   <App />
+   </Provider>
     </AppContextProvider>
     </AppCalculatorProvider>
+    
     
   </React.StrictMode>,
   document.getElementById('root')

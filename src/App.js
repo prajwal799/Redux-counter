@@ -4,13 +4,16 @@ import Counter from './component/Counter';
 import { useContext, useState } from 'react';
 import { AppContext } from './Redux/AppContextApi';
 import Calculator from './component/Calculator';
+import Todo from './Todo/Todo.jsx';
 
 function App() {
   const {getState} = useContext(AppContext);
   const {counter} = getState();
   return (
     <div className="App">
-      <Calculator />
+      <Counter /><br /><br /><br />
+      <Todo />
+      {/* <Calculator /> */}
     </div>
   );
 }
